@@ -7,7 +7,7 @@ Redmine::Plugin.register :redmine_auto_watchers do
   description 'Automatic Watchers is a Redmine project that automatically adds people that touch an issue as watchers."'
   version '1.0.0'
 
-  requires_redmine '2.5'
+  requires_redmine '3.2'
 
   settings default:
     {'enable_watchers' => 'on'},

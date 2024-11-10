@@ -3,7 +3,7 @@
 module AutoWatchers
   module Hooks
 
-    class AutoWatchersIssuerHook < Redmine::Hook::ViewListener
+    class AutoWatchersIssueHook < Redmine::Hook::ViewListener
       def controller_issues_edit_before_save(context={})
         configuration = Setting.plugin_redmine_auto_watchers
         if configuration['enable_watchers']
